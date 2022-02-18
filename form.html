@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div>
+        <label for="modal-form-name">Name</label>
+        <input type="text" id="modal-form-name" name="Имя" required>
+    </div>
+    <br>
+       <!-- Увы, не нашла как сделать отступы без CSS, есть вариант поставить br или любой заголовок параграф пустой, 
+   но это же будут просто кастыли.если есть какой-нибудь вариант жду в комментариях домашки-->
+    <div>
+        <label for="modal-form-email">Email</label>
+        <input type="email" id="modal-form-email" name="Email" required>
+    </div>
+    <br>
+    <div>
+        <label for="phone_number">Phone number</label>
+        <input type="tel" name="phone_number" id="phone_number" required>
+    </div>
+    <form action="URL" method="post">
+        <fieldset>
+        
+        <legend>choose your age</legend>
+      
+        <input type="radio" id="teenager" name="age">
+        <label for="teenager">12-17</label><br/>
+      
+        <input type="radio" id="adult" name="age">
+        <label for="adult">18-29</label><br/>
+
+        <input type="radio" id="middle-aged" name="age">
+        <label for="elderly">30-49</label><br/>
+      
+        <input type="radio" id="elderly" name="age">
+        <label for="elderly">50+</label>
+
+         </fieldset>
+   
+        <label> Gender :</label>
+        <input id="woman" type="radio">
+        <label for="woman">Woman</label>
+        <input id="man" type="radio">
+        <label for="man">Man</label> 
+         
+        <h4>Amount of product</h4>
+        <select name="form_select">
+        <option value="Значение 1">1</option>
+        <option value="Значение 2">2</option>
+        <option  selected="selected" value="Значение 3">3</option>
+        <option value="Значение 4">4</option>
+        <option value="color_white">5</option>
+        </select>
+
+        <h4>add a comment to the order</h4> 
+        <textarea name="comments" cols="24" rows="4">
+        your comment</textarea>
+    </form>
+    <button type="submit">Send data</button>
+</body>
+</html>
