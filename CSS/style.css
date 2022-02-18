@@ -1,0 +1,162 @@
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: #F5F7FA;
+min-height: 100vh;
+scroll-behavior: smooth;
+text-rendering: optimizeSpeed;
+line-height: 1.5;
+}
+
+.round_foto{
+display: inline-block;
+border-radius: 50%;
+overflow: hidden; /* чтобы не вылезало за границы */
+width: 150px;
+height: 150px;
+box-shadow: 0 0 0 3px rgb(115, 133, 115), 0 0 13px rgb(97, 95, 95); /* Параметры теней */
+/* display: block; */
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+.About_me{
+border: 2px solid #4fac4f;
+margin: 0 50px 20px 50px;
+padding: 0 15px 0 15px;
+}
+.main-container{
+margin: 20px 50px;
+position: relative;
+height: 350px;
+}
+.mail-content-title{
+text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+color: white;
+}
+
+.my-projects-section{
+background-color: #18a99c;
+display: inline-block;
+width: 47%;
+height: 350px;
+padding: 0px 15px 0 15px;
+vertical-align: top;
+margin-right: 10px;
+}
+
+.my-projects-link {
+font-size: 16px;
+line-height: 24px;
+color: #595959;
+text-decoration: none;
+}
+.my-projects-link:hover {
+  /* Добавляем подчёркивание 
+  при наведении курсора мыши на ссылку */
+text-decoration: underline;
+}
+ 
+.my-certificates-section {
+background-color: #29ae1d;
+display: inline-block;
+width: 48%;
+height: 350px;
+padding: 0 15px 0 15px;
+vertical-align: top;
+margin-left: 10px;
+}
+
+#circle_left {
+width: 60px;
+height: 60px;
+background:#fc6554;
+-moz-border-radius: 60px;
+-webkit-border-radius: 60px;
+border-radius: 60px;
+position: absolute;
+left: -30px;
+top: 150px;
+}
+#triangle_left {
+width: 0px;
+height: 0px;
+border-top: 30px solid transparent;
+border-right: 30px solid #ffffff;
+border-bottom: 30px solid transparent;
+}
+
+#circle_right {
+width: 60px;
+height: 60px;
+background:#fc6554;
+-moz-border-radius: 60px;
+-webkit-border-radius: 60px;
+border-radius: 60px;
+position: absolute;
+right: -20px;
+top: 150px;
+}
+#triangle_right {
+width: 0px;
+height: 0px;
+margin-left: 30px;
+border-top: 30px solid transparent;
+border-left: 30px solid #ffffff;
+border-bottom: 30px solid transparent;
+}
+
+.my-skills{
+margin: 20px 20px 20px 50px;
+padding-left: 15px;
+}
+
+.mail-content-title-little{
+text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+color: #75adaf;
+margin: 0 20px 20px 100px;
+}
+.main-contain-two{
+margin: 10px 50px 0 50;
+}
+
+.main-contain-two-left{
+display: inline-block;
+width: 47%;
+height: 400px;
+padding-left: 30px;
+vertical-align: top;
+margin-left: 20px;
+}
+
+.table-with-button{
+display: inline-block;
+width: 55%;
+height: 35%;
+padding: 0 20px 0 30px;
+ }
+.about-button {
+border: 0;
+height: 50px;
+width: 200px;
+margin: 20px 0 10px 20px;
+background:#929292 ;
+border-radius: 50px;    
+color: #ffffff;
+}
+.main-contain-two-right{
+border: 2px solid #4fac4f;
+display: inline-block;
+width: 46%;
+height: 350px;
+padding: 0 20px 0 20px;
+vertical-align: top;
+
+}
+.content-little-text { 
+text-align: center;
+font-size: 18px;
+}
+
+
+  
