@@ -52,7 +52,6 @@
     border-bottom: 3px solid #5094f2;
     }
 
-
     .fon {
     height: 490px;
     width: 1250px;
@@ -145,6 +144,7 @@
     font-stretch: ultra-expanded;  
     letter-spacing: 0.7px;
     margin-top: -30px;
+    margin-left: -60px;
     text-align: center;
     }
          
@@ -157,11 +157,8 @@
     padding-top: 7px;
     padding-left: -20px;
     text-align: center;
-    }
-
-    .margin-text{
     margin-left: -60px;
-    }  
+    }
 
     .cart {
     font-family: 'Roboto', sans-serif;
