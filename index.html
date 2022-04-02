@@ -3,71 +3,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prechu</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <title>Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/utility.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="container-logo">
-                <img width="44px" height="44px" src="./picture/free-icon-quotation-mark-94894.png" alt="logo">
-                <h1 class="text-logo">Prechu</h1>
+    <header class="header">
+        <img class="logo" src="./img/logo.png" alt="logo">
+        <object class="menu-icon" data="./svg/menu-button-icon.svg" type="image/svg+xml"></object>
+    </header>
+    <section class="intro text-white">
+        <h1 class="intro__heading">PC gaming news, reviews, and guides</h1>
+        <nav class="nav-menu">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__list__item">about us |</li>
+                <li class="nav-menu__list__item">news |</li>
+                <li class="nav-menu__list__item">reviews |</li>
+                <li class="nav-menu__list__item">articles |</li>
+                <li class="nav-menu__list__item">#future </li>
+            </ul>
+        </nav>
+        <button class="button btn-white text-white btn-16">Learn more</button>
+    </section>
+    <section class="benefits">
+        <div class="benefits-section-first">
+            <object data="./icon/blue-circle.svg" type="image/svg+xml"></object>
+            <h1 class="benefits__heading">Benefits of <span style="font-weight: bolder;">Video Games</span> For Kids & Adults</h1>
+        </div>
+        <div class="benefits-section-second">
+            <img class="benefits-section-second__boy" width="557" height="557" src="./img/boy.jpg" alt="image boy">
+            <div style="display: flex; justify-content: space-between;">
+                <img style="border-radius: 50%; width: 310; height: 310; border: 11px solid white;" src="./img/boy-2.jpg" alt="image boy-2">
+                <div class="card card-grey card-big">
+                    <h2 class="card__heading heading-bold">Healthy brain stimulation</h2>
+                    <p class="card__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
+                    <button class="button btn-blue text-white btn-14">Learn more</button>
+                </div>
             </div>
-            
-            <nav class="menu">
-                    <ul class="menu-list">
-                        <li class="menu-list-item">Home</li>
-                        <li class="menu-list-item active">Products</li>
-                        <li class="menu-list-item">Services</li>
-                        <li class="menu-list-item">Contact</li>
-                    </ul>
-            </nav>  
-        </header>
-        <section class="fon">
-            <img src="./picture/iphone.png" alt="iphone" class="iphone">
-                <div class="about-content">
-                    <h1 class="about-content-header">Lorem Ipsum is simply</h1>
-                    <h2 class="about-content-text">dummy text of the <br>printing & typesetting</h2>
-                    <div class="about-button-main">
-                        <button class="about-button"><img class="about-button-logo" width="28px" height="28px" src="./picture/icons8-ок-384.png" alt=""><p>Sign up now</p>
-                        </button>
+        </div>      
+        <div class="benefits-section-third">
+            <object data="./icon/beige-circle.svg" type="image/svg+xml"></object>
+        </div>
+       
+    </section>
+    <section class="benefits-list">
+        <img width="850" height="815" src="./img/man.jpg" alt="man">
+        <div class="benefits-list__box">
+            <div class="benefits-list__box-item">
+                <h2 class="list-header heading-bold" >Video games</h2>
+                <p class="card__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="benefits-list__box-item">
+                <h2 class="list-header heading-bold" >Brain stimulation</h2>
+                <p class="card__text"> Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <div class="benefits-list__box-item">
+                <h2 class="list-header heading-bold" >Stress relief</h2>
+                <p class="card__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+            </div>
+            <p style="margin-left: 380px;" class="card__text-cursive text-white">Images from  <a class="text-white" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
+        </div>
+
+    </section>
+    <section class="top-list">
+        <object style="width: auto; margin-top: 300; z-index: -1;" data="./icon/rectangble-blue.svg" type="image/svg+xml"></object>
+        <img class="top-list__img" src="./img/win.jpg" alt="win">
+        <div class="card card-white card-sm">
+            <svg class="strelka-left-1" viewbox="0 0 60 100"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" fill="#666666"></path></svg>
+            <svg class="strelka-right-1" viewbox="0 0 60 100"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" fill="#666666"></path></svg>
+            <h2 class="card__heading">Top PC Games</h2>
+            <p class="card__text-cursive"> Auctor augue mauris augue neque gravida in fermentum et. Feugiat in fermentum posuere urna nec tincidunt praesent semper.</p>
+            <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
+            <button class="button btn-blue text-white btn-14">Learn more</button>
+        </div>
+    </section>
+    <section style="width: 100%;" class="gadgets text-white">
+        <h1 class="gadgets__heading heading-bold">Gadgets for your game</h1>
+        <button class="button btn-white text-white btn-14 heading-bold">Viev All</button>
+    </section>
+    <section class="download">
+        <div class="download-section-first">
+            <h2 class="card__heading">Looking for games to download for free?</h2>
+            <p class="card__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
+            <button class="button btn-blue text-white btn-14">Read more</button>
+        </div>
+        <div class="download-section-second">
+            <img width="300" height="300" style="border-radius: 50%;" src="./img/win-1.jpg" alt="win">
+            <img width="300" height="300" style="border-radius: 50%;" src="./img/girl.jpg" alt="girl">
+        </div>      
+        <div class="download-section-third">
+            <object class="download-section-third__circle-blue" data="./icon/blue-circle.svg" type="image/svg+xml"></object>
+            <img width="526" height="526" style="border-radius: 49%;" src="./img/boy-3.jpg" alt="boy">
+            <object class="download-section-third__circle" width="164" height="164" data="./icon/beige-circle.svg" type="image/svg+xml"></object>
+        </div>
+    </section>
+    <section class="vr-tech">
+        <div class="vr-tech__bg-beige">
+            <img class="vr-tech__bg-beige__people" src="./img/people.jpg" alt="people">
+        </div> 
+        <div class="card-sm vr-tech-card">
+            <h2 class="card__heading heading-bold">VR-Technologies</h2>
+            <p class="card__text">Excepteur sint occaecat cupidatat non  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">prodient</a>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
+            <button class="button btn-white-border-black text-black btn-14">Contact us</button>
+        </div>
+     </section>
+    <section class="contact">
+            <img width="570" height="672" src="./img/man-stand.jpg" alt="man-stay">
+            <div class="contact-form" >
+                    <form class="contact__modal-form">          
+                        <h2 style="color: #666;" class="list-header">contact form</h2>
+                        <div class="contact__modal-form__feild">
+                            <input type="text" class="modal-form-name" name="Имя" placeholder="Enter your name" style="background-color: #e8e8e8;" required>
+                        </div>
+                        <div class="contact__modal-form__feild">
+                            <input type="email" class="modal-form-email" id="modal-form-email" name="Email" placeholder="Enter a valid email adress" style="background-color: #e8e8e8;" required>
+                        </div>   
+                        <div class="contact__modal-form__feild"> 
+                            <textarea class="modal-form-message" style="background-color: #e8e8e8; color: #666;" name="comments" rows="4" placeholder="Enter a valid email adress" >Enter your message</textarea>          
+                        </div>
+                            <button class="button button-submit text-black btn-14">Submit</button>
+                    </form>
+                    <h2 style="color: #666;" class="list-header">follow us</h2>
+                    <div class="contact__about-social">
+                        <a href="www.google.com" target="blank">
+                            <img class="contact-about-social__item" src="./svg/facebook icon.svg" alt="facebook">
+                        </a>
+                        <a href="www.google.com" target="blank" >
+                            <img class="contact-about-social__item" src="./svg/twitter icon.svg" alt="twitter">
+                        </a>
+                        <a href="www.google.com" target="blank">
+                            <img class="contact-about-social__item" src="./svg/instagram icon.svg" alt="instagram">
+                        </a>
+                        <a href="www.google.com" target="blank">
+                            <img class="contact-about-social__item" src="./svg/google-icon.svg" alt="google-icon">
+                        </a>
+
+                      
                     </div>
-                </div>
-        </section>
-        <section class="benefits">
-                    <div class="benefits-icon benefits-icon-pencil"> 
-                        <object type="image/svg+xml" data="./svg/My path pencil.svg"></object>
-                        <p class="benefits-header">Contrary to popular</p>
-                        <p class="benefits-text">Lorem ipsum is not simply random text. It <br> has roots in a piece</p>
-                    </div>
-                    <div class="benefits-icon benefits-icon-tv"> 
-                        <object type="image/svg+xml" data="./svg/My path tv.svg"></object>
-                        <p class="benefits-header">Contrary to popular</p>
-                        <p class="benefits-text">Lorem ipsum is not simply random text. It <br> has roots in a piece</p>
-                    </div>
-                    <div class="benefits-icon benefits-icon-bag"> 
-                        <object type="image/svg+xml" data="./svg/My path bag.svg"></object>
-                        <p class="benefits-header">Contrary to popular</p>
-                        <p class="benefits-text">Lorem ipsum is not simply random text. It <br> has roots in a piece</p>
-                    </div>
-        </section>
-        <h1 class="about-content-header cart">The Shopping cart</h1>
-        <section class="benefits cart-wrap"> 
-                <img src="./picture/cart.jpg" alt="picture cart">
-                <div class="cart-text">
-                  <h3 class="cart-text-main grey">Some Bullet text here</h3>
-                  <p class="cart-text-simply grey">Lorem Ipsum is simply dummy text of the printing and typesetting <br> Lorem Ipsum has been the industry's standard dummy text ever <br> When an unknown printer took a gallery of type and scrambled <br> It to make a type specimen book. It has survived not only five centuries <br> But also the leap into electronic typesetting. <br> Remairing essentially unchanged.It was popularised <br> The release of Letrast sheets containing Lorem Ipsum passeges</p>
-                </div>
-        </section>
-        <hr size="1px" color="#cccccc">
-        <footer height="96px" class="grey">
-            <p class="Copyright">Copyright &#169; 2012-2013 cssautor.com</p>
-        </footer>
-   </div> 
+                    <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
+            </div>
+    </section>
+    <footer style="background-color: #333333;">
+        <h4 class="footer-section text-white">Sample text. Click to select the text box. Click again or double click to start editing the text.</h4>
+    </footer>
 </body>
 </html>
