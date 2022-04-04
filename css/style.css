@@ -61,12 +61,25 @@ padding-top: 37%;
 position: relative;
 }
 
-.benefits-section-second__boy {
+.benefits-section-second__img {
+width: 557px;
+height: 557px;
 border-radius: 50%; 
 position: absolute;
 z-index: -1; 
 top: 40px;
 left: 75px;
+}
+.benefits-section-second__box-card{
+display: flex;
+justify-content: space-between;
+}
+
+.benefits-section-second__img-2{
+border-radius: 50%; 
+width: 310; 
+height: 310;
+border: 11px solid white;
 }
 
 .benefits-section-third {
@@ -97,10 +110,19 @@ padding: 20 30px;
 background-color: white;
 }
 
+.benefits-list__sign {
+margin-left: 380px;
+}
 
 .top-list {
 background-color: #f5f7fa;
 height: 1026px;
+}
+
+.top-list__blue-rect{
+width: auto; 
+margin-top: 300;
+z-index: -1;
 }
 
 .top-list__img{
@@ -146,6 +168,12 @@ justify-content: space-between;
 margin: 0 91px 0 34px;
 }
 
+.download-section-second__img {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+}
+
 .download-section-third {
 display: flex;
 margin: -190px 94px 100px 153px;
@@ -153,8 +181,16 @@ justify-content: space-between;
 position: relative;
 }
 
-.download-section-third__circle {
+.download-section-third__img{
+width: 526px;
+height: 526px;
+border-radius: 50%;
+}
+
+.download-section-third__circle-beige {
 margin-top: 380px;
+width: 164px;
+height: 164px;
 }
 
 .download-section-third__circle-blue {
@@ -190,6 +226,10 @@ margin: 50px 50px 0 50px;
 display: flex;
 }
 
+.contact__img {
+height: 672px;
+width: 570px;
+}
 
 .contact-form {
 height: 592px;
@@ -217,6 +257,8 @@ height: 30px;
 padding: 4px;   
 box-sizing: border-box;
 border: none;
+background-color: #e8e8e8;
+color: #666;
 }
 
 .modal-form-message{
@@ -264,10 +306,14 @@ width: 32px;
 height: 32px;
 }
 
+.footer {
+background-color: #333333;  
+width: 100%;
+}
+
 .footer-section {
 padding: 40px;
 box-sizing: border-box;
-background-color: #333333;
 margin: auto;
 text-align: center;
 width: 600px;
