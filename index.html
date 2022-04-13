@@ -3,152 +3,264 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
+    <title>lets-talk-about</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/utility.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/styles reset/normalize.css">
+<link rel="stylesheet" href="./styles/styles reset/reset.css">
+<link rel="stylesheet" href="./styles/style.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="./img/logo.png" alt="logo">
-        <object class="menu-icon" data="./svg/menu-button-icon.svg" type="image/svg+xml"></object>
-    </header>
-    <section class="intro text-white">
-        <h1 class="intro__heading">PC gaming news, reviews, and guides</h1>
-        <nav class="nav-menu">
-            <ul class="nav-menu__list">
-                <li class="nav-menu__list__item">about us |</li>
-                <li class="nav-menu__list__item">news |</li>
-                <li class="nav-menu__list__item">reviews |</li>
-                <li class="nav-menu__list__item">articles |</li>
-                <li class="nav-menu__list__item">#future </li>
-            </ul>
-        </nav>
-        <button class="button btn-white text-white btn-16">Learn more</button>
-    </section>
-    <section class="benefits">
-        <div class="benefits-section-first">
-            <object data="./icon/blue-circle.svg" type="image/svg+xml"></object>
-            <h1 class="benefits__heading">Benefits of <span style="font-weight: bolder;">Video Games</span> For Kids & Adults</h1>
-        </div>
-        <div class="benefits-section-second">
-            <img class="benefits-section-second__img" src="./img/boy.jpg" alt="image boy">
-            <div class="benefits-section-second__box-card">
-                <img class="benefits-section-second__img-2" src="./img/boy-2.jpg" alt="image boy-2">
-                <div class="card card-grey card-big">
-                    <h2 class="card__heading heading-bold">Healthy brain stimulation</h2>
-                    <p class="card__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
-                    <button class="button btn-blue text-white btn-14">Learn more</button>
+    <div class="container">
+        <header class="header bg-white">
+            <object class="menu" data="./svg/menu-button-icon.svg" type="image/svg+xml"></object>
+        </header>
+        <section class="main">
+            <h1 data-aos="fade-right" class="main-title">Preparing For Your Success, <br>
+            We Provide Truly Prominent IT Solutions.</h1>
+            <div data-aos="zoom-in-up" class="main-form">
+                <h2 class="main-form__header">Make An Appointment</h2>
+                <p class="main-form__text">Get in touch and discover how we can help. <br> We aim to be in touch</p>
+                <div class="contact">
+                    <form class="contact-form">          
+                        <div>
+                            <input type="text" class="contact__name" name="Имя" placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <input type="email" class="contact__name" id="modal-form-email" name="Email" placeholder="Enter a valid email adress" required>
+                        </div>   
+                        <div> 
+                            <textarea class="contact__text" name="comments" rows="4" placeholder="Enter a valid email adress" >Enter your message</textarea>          
+                        </div>
+                        <button class="button-submit">Submit</button>
+                    </form>
                 </div>
             </div>
-        </div>      
-        <div class="benefits-section-third">
-            <object data="./icon/beige-circle.svg" type="image/svg+xml"></object>
-        </div>   
-    </section>
-    <section class="benefits-list">
-        <img width="850" height="815" src="./img/man.jpg" alt="man">
-        <div class="benefits-list__box">
-            <div class="benefits-list__box-item">
-                <h2 class="list-header heading-bold">Video games</h2>
-                <p class="card__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </section>
+        <section class="our-services">
+            <h1 class="main-header">Our Services</h1>
+            <div class="our-services-wrapper">
+                <div data-aos="zoom-in" class="services">
+                    <object width="48" height="48" data="./svg/copywriting.svg" type="image/svg+xml"></object>
+                    <h2 class="services__header">Copywriting</h2>
+                    <p class="services__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+                <div data-aos="zoom-in" class="services">
+                    <object width="48" height="48" data="./svg/graphic-design.svg" type="image/svg+xml"></object>
+                    <h2 class="services__header">Graphic Design</h2>
+                    <p class="services__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+                <div data-aos="zoom-in" class="services">
+                    <object width="48" height="48" data="./svg/development.svg" type="image/svg+xml"></object>
+                    <h2 class="services__header">Development</h2>
+                    <p class="services__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+                <div data-aos="zoom-in" class="services">
+                    <object width="48" height="48" data="./svg/logistics.svg" type="image/svg+xml"></object>
+                    <h2 class="services__header">Logistics</h2>
+                    <p class="services__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+                <div data-aos="zoom-in" class="services">
+                    <object width="48" height="48" data="./svg/consultation.svg" type="image/svg+xml"></object>
+                    <h2 class="services__header">Consultations</h2>
+                    <p class="services__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
+                <div data-aos="zoom-in" class="services">
+                    <object width="48" height="48" data="./svg/Web-design.svg" type="image/svg+xml"></object>
+                    <h2 class="services__header">Web Design</h2>
+                    <p class="services__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                </div>
             </div>
-            <div class="benefits-list__box-item">
-                <h2 class="list-header heading-bold">Brain stimulation</h2>
-                <p class="card__text"> Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </section>
+        <section class="about-us">
+            <h1 class="main-header">About Us</h1>
+            <div class="tabs">
+                <div class="tab">
+                    <input type="radio" id="tab1" name="tab-group" checked>
+                    <label for="tab1" class="tab-title">Overviev</label> 
+                    <section class="content">
+                        <h2 class="content__header"> Brave is an innovative web solution, which combines captivating design and flawless functionality in a multipurpose HTML template.</h2>
+                        <p class="content__text-blue"> Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p class="content__text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>                    
+                    </section>
+                </div> 
+                <div class="tab">
+                    <input type="radio" id="tab2" name="tab-group">
+                    <label for="tab2" class="tab-title">Founder</label> 
+                    <section class="content"> 
+                        <br>
+                        <p class="content__text"> Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> <br>
+                        <p class="content__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </section>
+                </div>
+                <div class="tab">
+                    <input type="radio" id="tab3" name="tab-group">
+                    <label for="tab3" class="tab-title">Mission</label> 
+                    <section class="content">
+                        <br>
+                        <h2 class="content__header">Be The First To Review This Product!</h2> 
+                        <p class="content__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                        <button class="content__button">Write product reviev</button>
+                    </section> 
+                </div> 
             </div>
-            <div class="benefits-list__box-item">
-                <h2 class="list-header heading-bold">Stress relief</h2>
-                <p class="card__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </section>
+        <section class="build">
+            <h1 class="main-header">Build Great Products</h1>
+            <div class="build-wrapper">
+                <div class="build__img">
+                    <img class="build__img" src="./img/1.jpg" alt="picture-1">
+                </div>
+                <div class="build__img">
+                    <img class="build__img"  src="./img/2.jpg" alt="picture-2">
+                </div>
+                <div class="build__img">
+                    <img class="build__img" src="./img/3.jpg" alt="picture-3">
+                </div>
+                <div class="build__img">
+                    <img class="build__img" src="./img/4.jpg" alt="picture-4">
+                </div>
+                <div class="build__img">
+                    <img class="build__img" src="./img/5.jpg" alt="picture-5">
+                </div>
+                <div class="build__img">
+                    <img class="build__img" src="./img/6.jpg" alt="picture-6">
+                </div>
             </div>
-            <p class="card__text-cursive text-white benefits-list__sign">Images from <a class="text-white" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
-        </div>
-    </section>
-    <section class="top-list">
-        <object class="top-list__blue-rect" data="./icon/rectangble-blue.svg" type="image/svg+xml"></object>
-        <img class="top-list__img" src="./img/win.jpg" alt="win">
-        <div class="card card-white card-sm">
-            <svg class="strelka-left-1" viewbox="0 0 60 100"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" fill="#666666"></path></svg>
-            <svg class="strelka-right-1" viewbox="0 0 60 100"><path d="M 50,0 L 60,10 L 20,50 L 60,90 L 50,100 L 0,50 Z" fill="#666666"></path></svg>
-            <h2 class="card__heading">Top PC Games</h2>
-            <p class="card__text-cursive"> Auctor augue mauris augue neque gravida in fermentum et. Feugiat in fermentum posuere urna nec tincidunt praesent semper.</p>
-            <p class="card__text-cursive">Images from <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
-            <button class="button btn-blue text-white btn-14">Learn more</button>
-        </div>
-    </section>
-    <section class="gadgets text-white">
-        <h1 class="gadgets__heading heading-bold">Gadgets for your game</h1>
-        <button class="button btn-white text-white btn-14 heading-bold">Viev All</button>
-    </section>
-    <section class="download">
-        <div class="download-section-first">
-            <h2 class="card__heading">Looking for games to download for free?</h2>
-            <p class="card__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="card__text-cursive">Images from<a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
-            <button class="button btn-blue text-white btn-14">Read more</button>
-        </div>
-        <div class="download-section-second">
-            <img class="download-section-second__img" src="./img/win-1.jpg" alt="win">
-            <img class="download-section-second__img" src="./img/girl.jpg" alt="girl">
-        </div>      
-        <div class="download-section-third">
-            <object class="download-section-third__circle-blue" data="./icon/blue-circle.svg" type="image/svg+xml"></object>
-            <img class="download-section-third__img" src="./img/boy-3.jpg" alt="boy">
-            <object class="download-section-third__circle-beige" data="./icon/beige-circle.svg" type="image/svg+xml"></object>
-        </div>
-    </section>
-    <section class="vr-tech">
-        <div class="vr-tech__bg-beige">
-            <img class="vr-tech__bg-beige__people" src="./img/people.jpg" alt="people">
-        </div> 
-        <div class="card-sm vr-tech-card">
-            <h2 class="card__heading heading-bold">VR-Technologies</h2>
-            <p class="card__text">Excepteur sint occaecat cupidatat non  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">prodient</a>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
-            <button class="button btn-white-border-black text-black btn-14">Contact us</button>
-        </div>
-     </section>
-    <section class="contact">
-            <img class="contact__img" src="./img/man-stand.jpg" alt="man-stay">
-            <div class="contact-form" >
-                    <form class="contact__modal-form">          
-                        <h2 class="list-header text-light-grey">contact form</h2>
-                        <div class="contact__modal-form__feild">
-                            <input type="text" class="modal-form-name" name="Имя" placeholder="Enter your name" required>
+            <p class="text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a>
+            </p>
+            <button class="build__button">Contact us</button>
+        </section>
+        <section class="partner">
+            <div data-aos="zoom-in-up" class="partner__main">
+                <h1 class="main-header">We partner with the world's leading universities</h1>
+                <p class="content__text">Etiam erat velit scelerisque in dictum non consectetur. Nisl purus in mollis nunc sed id semper. Cras fermentum odio eu feugiat pretium nibh ipsum.</p>
+                <button class="partner__button">Read more</button>
+            </div>
+            <div class="partner__list">
+                    <div class="partner__item content__text-blue">
+                        <input id="partner__item1" type="checkbox" name="pesontedans">
+                        <label for="partner__item1">Create a Webinar in Minutes <img width="40" height="40" src="./img/plus_icon-24.png" alt="icon"></label>
+                        <div class="pesontedan-content">
+                                <p>Interdum velit euismod in pellentesque massa placerat duis. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Nibh nisl condimentum.</p>
+                                <ul>
+                                    <li>–Mattis nunc sed blandit libero volutpat.</li>
+                                    <li>–Tortor at risus viverra adipiscing at in tellus.</li>
+                                    <li>–Purus ut faucibus pulvinar elementum.</li>
+                                    <li>–Blandit turpis cursus in hac habitasse.</li>
+                                </ul>
                         </div>
-                        <div class="contact__modal-form__feild">
-                            <input type="email" class="modal-form-email" id="modal-form-email" name="Email" placeholder="Enter a valid email adress" required>
-                        </div>   
-                        <div class="contact__modal-form__feild"> 
-                            <textarea class="modal-form-message" name="comments" rows="4" placeholder="Enter a valid email adress" >Enter your message</textarea>          
-                        </div>
-                            <button class="button button-submit text-black btn-14">Submit</button>
-                    </form>
-                    <h2 class="list-header text-grey">follow us</h2>
-                    <div class="contact__about-social">
-                        <a href="www.google.com" target="blank">
-                            <img class="contact-about-social__item" src="./svg/facebook icon.svg" alt="facebook">
-                        </a>
-                        <a href="www.google.com" target="blank" >
-                            <img class="contact-about-social__item" src="./svg/twitter icon.svg" alt="twitter">
-                        </a>
-                        <a href="www.google.com" target="blank">
-                            <img class="contact-about-social__item" src="./svg/instagram icon.svg" alt="instagram">
-                        </a>
-                        <a href="www.google.com" target="blank">
-                            <img class="contact-about-social__item" src="./svg/google-icon.svg" alt="google-icon">
-                        </a>                    
                     </div>
-                    <p class="card__text-cursive">Images from  <a class="link" href="https://nicepage.com/Editor/Siteboard/#/builder/1664521/page/1676716">Freepik</a></p>
+                    <div class="partner__item content__text-blue">
+                        <input id="partner__item2" type="checkbox" name="pesontedans">
+                        <label for="partner__item2">Business Sustainability Management <img width="40" height="40" src="./img/plus_icon-24.png" alt="icon"></label>
+                        <div class="pesontedan-content">
+                                <ul>
+                                    <li>-Interdum velit euismod in pellentesque massa.</li>
+                                    <li> –Tristique et egestas quis ipsum suspendisse ultrices gravidae.</li>
+                                    <li>–Nibh nisl condimentum id venenatis a condimentum.</li>
+                                    <li>–Diam volutpat commodo sed egestas egestas fringilla.</li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="partner__item content__text-blue">
+                        <input id="partner__item3" type="checkbox" name="pesontedans">
+                        <label for="partner__item3">Learn how to grow your business <img width="40" height="40" src="./img/plus_icon-24.png" alt="icon"></label>
+                        <div class="pesontedan-content">
+                            <ul>
+                                <li>–Mattis nunc sed blandit libero volutpat.</li>
+                                <li>–Tortor at risus viverra adipiscing at in tellus.</li>
+                                <li>–Purus ut faucibus pulvinar elementum.</li>
+                                <li>–Blandit turpis cursus in hac habitasse.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="partner__item content__text-blue">
+                            <input id="partner__item4" type="checkbox" name="pesontedans">
+                            <label for="partner__item4">Practical tips to help you price your products <img width="40" height="40" src="./img/plus_icon-24.png" alt="icon"></label>
+                            <div class="pesontedan-content">
+                                <ul>
+                                    <li>–Mattis nunc sed blandit libero volutpat.</li>
+                                    <li>–Tortor at risus viverra adipiscing at in tellus.</li>
+                                    <li>–Purus ut faucibus pulvinar elementum.</li>
+                                    <li>–Blandit turpis cursus in hac habitasse.</li>
+                                </ul>
+                            </div>
+                    </div>
             </div>
-    </section>
-    <footer class="footer">
-        <h4 class="footer-section text-white">Sample text. Click to select the text box. Click again or double click to start editing the text.</h4>
-    </footer>
+        </section>
+        <section class="success">
+            <h1 class="main-header">Consulting Successes</h1>
+            <p class="content__text-success">Sample text. Click to select the text box. Click again or double click to start editing the text. Sit amet porttitor eget dolor morbi non arcu risus quis. Lacus sed viverra tellus in hac habitasse. Nam libero justo laoreet sit. Donec ultrices tincidunt arcu non sodales neque sodales.</p> 
+
+            <div class="success-wrapper">
+                <div data-aos="zoom-in-up" class="box box-yellow">
+                    <object width="59" height="59" data="./svg/project.svg" type="image/svg+xml"></object>
+                    <h2 class="box-text">Projects</h2>
+                    <h1 class="box-number">100</h1>
+                </div>
+                <div data-aos="zoom-in-up" class="box box-blue">
+                    <object width="59" height="59" data="./svg/clients(2).svg" type="image/svg+xml"></object>
+                    <h2 class="box-text">Clients</h2>
+                    <h1 class="box-number">40</h1>
+                </div>
+                <div data-aos="zoom-in-up" class="box box-blue">
+                    <object width="80" height="80" data="./svg/team.svg" type="image/svg+xml"></object>
+                    <h2 class="box-text">Our Team</h2>
+                    <h1 class="box-number">20</h1>
+                </div>
+                <div data-aos="zoom-in-up" class="box box-yellow">
+                    <object width="80" height="80" data="./svg/awards.svg" type="image/svg+xml"></object>
+                    <h2 class="box-text">Awards</h2>
+                    <h1 class="box-number">76</h1>
+                </div>
+            </div>
+        </section>
+        <section class="say">
+            <h1 class="main-header">What people say</h1>
+            <div class="say-wrapper">
+                <div data-aos="zoom-in" class="say__text">Article evident arrived express highest men did boy. Mistress sensible entirely am so. Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read. Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like. He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing.</div>
+                <div class="box-blue-aside"><img width="64" height="64" src="./img/kav.png" alt="logo"></div>
+            </div>
+        </section>
+        <section data-aos="zoom-in-up" class="location">
+            <h2 class="roboto">LOCATION</h2>
+            <h1 class="main-header">121 Rock Sreet, 21 Avenue, <br>
+                New York, NY 92103-9000 <br> <span style="color: #f1c50e;">_______</span></h1>
+            <p class="location__text">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </section>
+        <footer class="footer">
+            <h2>Sample text. Click to select the text box. Click again or double <br> click to start editing the text.</h2>
+            <p><a class="link-purpe" href="https://nicepage.com/website-templates">Website Templates</a> created with <a class="link-purpe" href="https://nicepage.com/"> Website Builder Software.</a></p>
+        </footer>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 50, // values from 0 to 3000, with step 50ms
+    duration: 800, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  
+  });
+  </script>
 </body>
 </html>
+    
+   

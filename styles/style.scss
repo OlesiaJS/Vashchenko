@@ -1,0 +1,574 @@
+$open-sanc:  'Open Sans', sans-serif;
+$montserat: 'Montserrat', sans-serif;
+
+$white: #fff;
+$light-grey: #f2f2f2;
+$dark-grey: #d0c3f5;
+$grey:#777777;
+$black: #000;
+$blue: #7c5ddf;
+$dark-blue: #6240d2;
+$yellow: #f1c50e;
+$light-black: #111;
+
+
+@mixin font($size, $color, $family, $l-height) 
+{
+font-size: $size;
+color: $color;
+font-family: $family;
+line-height: $l-height;
+}
+  
+$light: 100;
+$normal: 400;
+$bold: 700;
+
+$font-60: 3.75rem;
+$font-48: 3rem;
+$font-24: 24px;
+$font-20: 1.2rem;
+$font-16: 1rem;
+$font-14: 14px;
+
+$l-height: 1.6;
+
+
+.body {
+    width: 100%;
+    overflow: visible;
+    }
+
+// .container {
+// padding: 0 50px 0 80px;
+// }
+
+.header {
+    background-color: $white;
+    height: 72px;
+    padding-top: 28px;
+    } 
+
+.menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.main {
+    font-family: $montserat;
+    background-image: url(/img/bg-title.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: 50% 100%;
+    height: 800px;
+    display: flex;
+    color: $white;
+    text-align: left;
+    padding: 200px 50px 0 80px;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    &-title {
+    font-size: $font-60;
+    line-height: 120%;
+    width: 55%;
+    font-weight: $bold;
+    margin-right: 40px;
+    }
+
+
+    &-form__header {
+    font-size: $font-24;  
+    font-weight: $bold;
+    margin-bottom: 20px;
+    }
+
+    &-form__text {
+    margin-top: 20px;
+    font-size: $font-16;
+    line-height: 160%;
+    text-align: left;
+    }
+}
+
+%message-shared {
+    background-color: $white;
+    padding: 10 20px;
+    display: block;
+    width: 100%;
+    background-image: none;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 20px;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    margin: 10px auto;
+    pointer-events: initial;
+    }
+
+.contact {
+    margin-top: 20px;
+    background-color: $yellow;
+    border-radius: 30px;
+    padding: 40px;
+ 
+    &__name {
+     @extend %message-shared;
+    }
+
+    &__text{
+    @extend %message-shared;
+    color: #777777;
+    }
+    }
+
+.button-submit {
+    border-radius: 20px;
+    background-color: $light-grey;
+    line-height: 1.15;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    }
+
+.button-submit:hover {
+    border-radius: 20px;
+    background-color: $grey;
+    line-height: 1.15;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    }
+
+
+
+.our-services, .success, .location {
+    background-color: $white;
+    color: $black;
+    text-align: left;
+    padding: 0 50px 0 80px;
+    }
+
+.main-header {
+    @include font($font-20, $black, $montserat, $l-height);
+    font-weight: $bold;
+    font-size: 3rem;
+    margin: 0 auto 35px 0;
+    text-transform: capitalize;
+    }
+
+.our-services-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    }
+
+.services {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    line-height: 1.6;
+    width: 370px;
+    
+     &__header {
+    @include font($font-20, $black, $montserat, $l-height);
+    font-weight: $bold;
+    margin-top: 20px;
+    }
+
+    &__text {
+    @include font($font-16, $grey, $open-sanc, $l-height);
+    margin-top: 30px;
+    line-height: 1.6;
+    }
+}
+
+.about-us {
+    background-color: $light-grey;
+    text-align: left;
+    padding: 80px;
+    min-height: 500px;
+    }   
+
+.tabs {
+    position: relative;
+    }
+
+   .tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    }
+
+   .tab input[type="radio"] { display: none; }
+   .tab-title {
+    @include font($font-20, $black, $open-sanc, $l-height);
+    font-weight: $bold;
+    background: $light-grey; 
+    padding: 10px 25px;
+    border: none; 
+    border-bottom: none; /* Снизу линию убираем */
+    }
+
+   .content {
+    position: absolute; 
+    border: none; 
+    padding: 20px 30px 30px 30px;
+    width: calc(100% - 60px);
+    left: 0;
+    min-height: 300px;
+    display: none; 
+    background-color: $white; 
+       
+    &__header {
+    @include font($font-24, $black, $montserat, $l-height);
+    font-weight: $bold;
+    pointer-events: initial;
+    padding-top: 3%;
+    }
+
+    &__text {
+    @include font($font-20, $black, $open-sanc, $l-height);
+    pointer-events: initial;
+    padding-top: 2%;
+
+    &-success {
+    @include font($font-20, $black, $open-sanc, $l-height);
+    line-height: 1.8;
+    }
+    }
+
+    &__text-blue {
+    margin: 30px auto 10px auto;
+    @include font($font-20, $blue, $open-sanc, $l-height);
+    pointer-events: initial;
+    font-weight: $bold;
+    }
+
+    &__button {
+    margin-top: 3%;
+    padding: 10px 30px;
+    border: none;
+    min-width: 245px;
+    background-color: $blue;
+    @include font($font-16, $white, $open-sanc, $l-height);
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+
+    &__button:hover{
+    background-color: $dark-blue;
+    }
+}
+
+   .tab :checked + .tab-title {
+    @include font($font-20, $white, $open-sanc, $l-height);
+    position: relative; 
+    background: $blue; /* Цвет фона */
+    top: 1px; /* Сдвигаем вниз */
+    z-index: 1; /* Отображаем поверх содержимого */
+   }
+
+   .tab :checked ~ .content {
+    display: block; /* Показываем активную вкладку */
+   }
+
+.build {
+    background-color: $light-grey;
+    text-align: left;
+    padding: 80px;
+
+    &__button {
+    margin-top: 2%;
+    padding: 15px 30px;
+    border: none;
+    min-width: 230px;
+    background-color: $yellow;
+    @include font($font-16, $white, $open-sanc, $l-height);
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+    
+    &__button:hover{
+    background-color: $yellow;
+    opacity: 50%;
+    }
+  
+   &-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    min-height: 650px;
+    max-width: 1100px;
+    align-content: space-between;
+    // display: grid;
+    // grid-template-columns: repeat(3, auto);
+    // grid-gap: 41px;
+    // min-height: 100%;
+    // flex-flow: row wrap;
+    // flex-shrink: inherit;
+    }
+
+    &__img{
+    box-sizing: border-box;
+    width: 286px;
+    height: 286px;
+    object-fit: cover; 
+    overflow: hidden;
+    margin: 0 0 40px;
+   
+    
+    img{
+    transition: 1s; /* Время эффекта */
+    }
+     
+    img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    }
+    }
+}
+
+.partner {
+    display: flex;
+    background-color: $white;
+    text-align: left;
+    padding: 80px;
+
+    &__main{
+    width: 50%;
+    }
+
+    &__button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    border: none;
+    min-width: 230px;
+    background-color: $yellow;
+    @include font($font-16, $white, $open-sanc, $l-height);
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+        
+    &__button:hover{
+    background-color: $grey;
+    color: $white;
+    }
+
+    &__list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+    }  
+
+}
+ 
+  .partner__item {
+    position: relative;
+    width: 100%;
+    margin: auto 20px;
+    color: #f3f1f1;
+    overflow: hidden;
+    @include font($font-20, $blue, $open-sanc, $l-height);
+    pointer-events: initial;
+    font-weight: $bold;
+    line-height: 2;
+    }
+  
+  .partner__item input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+     }
+  
+  .partner__item label {
+    position: relative;
+    display: block;
+    background: $white;
+    line-height: 3;
+    cursor: pointer;
+    font-size: $font-16;
+    display: flex;
+    justify-content: space-between;
+    }
+  
+  .pesontedan-content {
+    @include font($font-16, $black, $montserat, $l-height);
+    max-height: 0;
+    overflow: hidden;
+    background: $white;
+    transition: max-height .40s;
+    margin-left: 40px;
+    font-weight: $light;
+    p{
+    font-weight: bold;  
+    margin-bottom: 10px;
+    }
+    }
+
+  /* :checked */
+  .partner__item input:checked ~ .pesontedan-content {
+    max-height: max-content;
+  }
+  
+  /* Icon */
+  .partner__item label::after {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: min-content;
+    line-height: 2;
+    text-align: start;
+    -webkit-transition: all .40s;
+    -o-transition: all .40s;
+    transition: all .40s;
+  }
+
+.success-wrapper {
+    margin-top: 20px;
+    margin-left: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-height: min-content;
+    width: 80%;
+    align-content: space-between;
+
+   
+    // margin-left: 20%;
+    // display: grid;
+    // grid-template-columns: repeat(2, calc(50% - 12.5px));
+    // min-width: 900px;
+    // min-height: 565px;
+    // grid-gap: 35px;
+    // box-sizing: border-box;
+    // justify-items: end;
+    // max-width: min-content;
+    // align-items: flex-end;
+
+}
+
+%message-center {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    color: $white;
+    text-align: center
+    }
+
+.box {
+    @extend %message-center;
+    width: 350px;
+    height: 256px;
+    margin: 15px 10px;
+    
+    &-yellow {
+    background-color: $yellow;
+    }
+    &-blue {
+    background-color: $blue;
+
+    &-aside {
+    background-color: $blue;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+    }
+    }
+
+    &-number {
+    @include font($font-60, $white, $open-sanc, $l-height);
+    font-weight: $bold;
+    }
+
+    &-text{
+    @include font($font-24, $white, $open-sanc, $l-height);
+    font-weight: $bold;
+    margin: 20px 0;
+    }
+}
+
+.say {
+    background-color: $light-grey;
+    text-align: left;
+    padding: 80px;
+
+    &-wrapper {
+    background-color: $white;
+    width: 100%;;
+    height: 100%;
+    display: flex;
+
+    }
+    &__text{
+    @include font($font-20, $light-black, $open-sanc, $l-height);
+    width: 80%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: auto;
+    line-height: 2.2;
+         
+    }
+    }
+
+    .footer {
+    @extend %message-center; 
+    width: 100%;
+    min-height: 90px;
+    background-color: #333;
+    color: $white;
+    @include font($font-14, $white, $open-sanc, $l-height);
+    }   
+
+//    Utility
+
+// text
+    .roboto{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 50px auto 30px auto;
+    font-size: $font-20;
+    color: $grey;
+    letter-spacing: 1.4px;
+    }
+
+    .location__text {
+    @include font($font-16, $light-black, $open-sanc, $l-height);
+    width: 310px;
+    margin: 40px 0;
+    }
+
+   .text-cursive {
+    @include font($font-16, $black, $open-sanc, $l-height);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25px;
+    }
+
+    .link{
+    color: #333;
+    }
+
+    .link:hover {
+    text-decoration: none;
+    }
+
+    
+    .link-purpe {
+        color: #c7baf2;
+    }
+        
+    .link-purpe:hover {
+        text-decoration: none;
+        color: $grey;
+        }
+
+
+
+
+
