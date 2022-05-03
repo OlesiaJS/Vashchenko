@@ -1,0 +1,239 @@
+.btn1 {
+    min-width: 208px;
+    display: block;
+    padding: 18px 30px;
+    margin: 28px auto;
+    text-decoration: none;
+    border:none ;
+    color: white;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    cursor: pointer;
+    touch-action: manipulation; 
+    transition: box-shadow 0.2s;
+}
+
+.btn1:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+}
+
+.btn1:hover {
+    background-color: #0085FF;
+    transition: all 0.2s;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+
+.btn1:active {
+    background-color: #0085FF;
+}
+
+.mekalades {
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;  
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    width: 100%;
+    position: relative;
+    height: 56px;
+    overflow: hidden;
+    margin-top: 30px;
+    border: none;
+  }
+
+.mekalades:not(.progruzka):hover {
+    background-color: #0085FF;
+    box-shadow: 0px 2px 15px 0px #2575fc;
+  }
+
+.avekstura{
+    width: 130px;
+    display: block;
+    position: absolute;
+    left: 40%;
+    right: 50%;
+    pointer-events: none;
+    transition: all 0.25s ease;
+    color: white;
+  }
+
+.progruzka-animate{
+    position:absolute;
+    width:100%;
+    z-index:100;
+    border-radius: 50%;
+    top: 23px;
+    left:0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.25s ease;
+  }
+
+.progruzka-animate:after{
+    content:'';
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    border:3px solid transparent;
+    border-left: 3px solid #fff;
+    animation: progruzka infinite 0.8s ease 0.05s;
+    animation-fill-mode:forwards;
+    position:absolute;
+  }
+
+.progruzka-animate:before{
+    content:'';
+    width:27px;
+    height:27px;
+    border-radius: 50%;
+    border:3px solid transparent;
+    border-left: 3px solid #0085FF;
+    animation: progruzka infinite 0.8s linear;
+    animation-fill-mode:forwards;
+    position:absolute;
+    opacity: 0.6;
+  }
+
+.mekalades.progruzka{
+    box-shadow: none;
+    width:100%;
+    background-color: white;
+  }
+
+.send {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;  
+    color: #24A3FF;
+    cursor: pointer;
+    width: 100%;
+    height: 56px;
+    overflow: hidden;
+    margin-top: 30px;
+    border: none;
+    z-index: 200;
+  }
+
+.mekalades.progruzka .progruzka-animate{
+    opacity: 1;
+  }
+
+  @keyframes progruzka{
+    0%{
+    transform:rotate(0deg);
+    }
+    100%{
+    transform:rotate(360deg);
+    }
+  }
+
+.body-fixed {
+    overflow: hidden;
+}
+
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #323264;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+.modal-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #F5F5FA;
+    margin-top: 20px;
+    height: 612px;
+    width: 650px;
+    top: 50px;
+    border-radius: 12px;
+    padding: 30px;
+} 
+
+.close-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.modal-form-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: #B3B3BA;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+.modal-form-email, .modal-form-name {
+width: 590px;
+min-height: 56px;
+border: none;
+outline: none;
+box-sizing: border-box;
+padding: 10px;   
+
+}
+
+.modal-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.close-icon svg {
+    fill: #F0145A;
+} 
+
+
+@media (max-width: 734px) {
+.modal-form {
+    width: 100%;
+    max-width: 375px;
+    height: 640px;
+    top: -100px;
+    }
+
+.modal-form-email, .modal-form-name {
+    max-width: 315px;
+    min-height: 56px;
+    }
+
+.avekstura{
+    left: 30%;
+    right: 56%;
+}}
