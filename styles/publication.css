@@ -1,0 +1,111 @@
+.padding-bottom {
+    padding-bottom: 30px;
+  }
+
+.button-container {
+    position: relative;
+    display:block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E6E6F0;
+    height: 42px;
+    width: 233px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 32px;
+    margin-bottom: 30px;
+    }
+
+.button-container:hover .button__articles {
+    background-color: #F5F5FA;
+}
+
+
+.button__news {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 105px;
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 8px 30px 10px;
+    border: none;
+}
+
+.button__articles {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 122px;
+    height: 38px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 8px 30px 10px;
+    border: none;
+    }
+
+.container {
+    padding: 50px 160px;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+    background: white;
+    }
+
+.we-have__entry {
+    margin: 60px 120px 0 120px;
+}      
+.we-have__picture-entry {
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.publications-entry-list {
+margin: 15px 10px;
+color: #F0145A;
+font-weight: 700;
+
+}
+.link-img__youtube {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 22px;
+    }
+
+.link-img__youtube img{
+    width: 640px;}
+
+
+@media (max-width: 1440px) {
+.container {
+    padding: 50px 60px;
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+    }
+}
+@media (max-width: 1024px) {
+.we-have__entry {
+    margin: 60px 60px 30px 60px;
+} 
+}
+@media (max-width: 734px) {
+.container {
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+    min-width: 100vw;
+    padding: 0;
+}
+
+.link-img__youtube img{
+    width: 315px;
+}
+  }

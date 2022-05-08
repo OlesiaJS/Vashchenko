@@ -103,11 +103,21 @@ $lh-15: 15px;
     margin-top: 30px;
 }
 
+.h-3-main {
+    @include font($font-22, $main, $bold, $lh-27);
+}
+
 .h-3-white {
     @include font($font-22, white, $bold, $lh-27);
+    }
+
+.margin-top {
     margin-top: 30px;
 }
 
+.padding-bottom {
+    padding-bottom: 30px;
+}
 .h-3:hover {
     color: $accent;
 }
@@ -171,7 +181,9 @@ $lh-15: 15px;
 .paragraph-14-black {
     @include font($font-14, #000, $normal, $lh-22);
 }
-
+.paragraph-16-black {
+    @include font($font-16, #000, $normal, $lh-26);
+}
 .list-text {
     @include font($font-18, #000000, $normal, $lh-26);
 }
@@ -420,9 +432,22 @@ bottom: 30px;
 left: 47%;
 margin-right: -51%;
 svg:hover {
-    fill: $accent;
+    fill: transparent;
   }
 }
+
+.scroll-down-active {
+    display: none;
+}
+.scroll-down:hover {
+    .scroll-down-active {
+        display: block;
+        position: absolute;
+        bottom: 30px;
+        left: 47%;
+        margin-right: -51%;
+    }
+} 
 
 
 .hp-3 {
@@ -493,6 +518,74 @@ svg:hover {
         border-radius: 12px 0px 0px 12px;
     }
 }
+
+.slider {
+    width: 100%;
+    min-height: 354px;
+    overflow: hidden;
+}
+
+.middle {
+   display: block;
+   margin-left: 50%;
+    transform: translateX(-50%);
+}
+.navigation {
+    display: block;
+    margin-left: 63%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #24A3FF;
+    opacity: 0.2;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: all .4s ease;
+}
+
+.bar:hover {
+    opacity: 0.8;
+}
+
+.bar:checked {
+    opacity: 0.8;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+width: 300%;
+min-height: 298px;
+display: flex;
+flex-direction: row;
+}
+
+.slide{
+    width: calc(100%/3);
+    transition: all .6s ease;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -33.33%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -66.66%;
+}
+
 .shadow-1 {
     position: absolute;
     left: 20px;
@@ -513,11 +606,18 @@ svg:hover {
     border-radius: 0px 0px 12px 12px;
 }
 
+
 .section-4__picture-text-wrap {
     display: flex;
     min-height: 298px;
     background: #F5F5FA;
+    
     }
+.section-4__picture-text-wrap {
+    display: flex;
+    min-height: 298px;
+    background: #F5F5FA;
+        }
 
 .wrapper-color-rectangle {
     display: flex;
@@ -1046,6 +1146,11 @@ padding-top: 55px;
         display: none;
     }
     }  
+
+.navigation {
+    margin-left: 55%;
+
+    }
 }
 
 

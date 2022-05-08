@@ -20,12 +20,9 @@
     margin-right: auto;
 }
 
-
-
 .we-have-wrapper__entry {
     width: calc((100% - 60px)/2);
 }
-
 
 .we-have__list-item {
     margin-top: 15px;
