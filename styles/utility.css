@@ -1,3 +1,10 @@
+html, body {
+  scrollbar-color: transparent transparent;     /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: 2px; 
+
+}
+
+  
 .btn1 {
     min-width: 208px;
     display: block;
@@ -41,9 +48,16 @@
   color: #E6E6F0; /* Цвет линии для IE6-7 */
   height: 4px; /* Толщина линии */
  }
+ .hr-thin {
+  border: none; /* Убираем границу */
+  background-color: #E6E6F0; /* Цвет линии */
+  color: #E6E6F0; /* Цвет линии для IE6-7 */
+  height: 2px; /* Толщина линии */
+ }
 
  .social-link {
    margin: 0 5px;
+   color: transparent;
  }
 .mekalades {
     background: #24A3FF;
@@ -188,14 +202,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #323264;
-    opacity: 0.7;
+    background: #707092;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease-in-out;
+    z-index: 5;
 }
 .modal-form {
     position: relative;
@@ -214,8 +228,8 @@
 
 .close-icon {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 37px;
+    right: 37px;
     background: none;
     border: none;
     outline: none;
@@ -242,7 +256,8 @@ min-height: 56px;
 border: none;
 outline: none;
 box-sizing: border-box;
-padding: 10px;   
+padding: 10px;  
+overflow: hidden; 
 
 }
 

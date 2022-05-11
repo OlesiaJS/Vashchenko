@@ -32,11 +32,36 @@
              top: 0;
              background: #CACADB;
          }
+.footer-adress-none{
+    display: none;
+}
 
 @media (max-width: 1440px) {
     .footer {
         padding: 30px 60px;
        }
+    }
+
+@media (max-width: 768px)  {
+    .footer{
+        text-align: center;
+    }
+
+    .footer-adress-company {
+        display: none;
+    }
+    .footer-wrapper{
+        display:flex;
+        justify-content: center;
+        padding-right: 20%;
+    }
+    .footer-adress {
+        justify-content: center;
+    }
+    .footer-adress-none{
+        display: block;
+        margin-top: 30px;
+    }
     }
 
     @media (max-width: 734px) {
@@ -46,7 +71,9 @@
             .footer-wrapper{
                 display: none;
             }
-    
+            .footer-adress-company-2 {
+                margin-top: 30px;
+            }
             .footer-phone-adress{
                 display: block;
             }

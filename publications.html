@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services-page</title>
+    <title>Publications</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -21,24 +21,37 @@
                     <div class="header-logo__picture">
                         <div class="logo-service">
                             <picture>
-                                <source media="(max-width: 734px)" srcset="./img/Logo-white-theme-85w.png">
-                                <source media="(min-width: 735px)" srcset="./img/Logo-white-theme-169w.png">
-                                <img src="./img/Logo-white-theme-169w.png" alt="logo">
+                                <source media="(max-width: 734px)" srcset="./img/Logo-white-theme-385w.svg">
+                                <source media="(min-width: 735px)" srcset="./img/Logo-white-theme-169w.svg">
+                                <img src="./img/Logo-white-theme-169w.jpf" alt="logo">
                             </picture>
                             <div class="list-header"><a class="list-header" href="">Publications</a></div>
                         </div>
                         <div class="gamburger">
-                            <input id="menu__toggle" type="checkbox" />
-                            <label class="menu__close" for="menu__toggle">
-                              <span></span>
+                            <input class="input" type="radio" name="tabs" id="burger">
+                            <label class="burger" for="burger">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10H25" stroke="#323264" stroke-width="2"/>
+                                    <path d="M7 16H25" stroke="#323264" stroke-width="2"/>
+                                    <path d="M7 22H25" stroke="#323264" stroke-width="2"/>
+                                </svg> -->
                             </label>
-                            <ul class="menu__box">
-                                <li><a class="menu__item" href="#">about us</a></li>
-                                <li><a class="menu__item" href="#">послуги</a></li>
-                                <li><a class="menu__item" href="#">команда</a></li>
-                                <li><a class="menu__item" href="#">публікації</a></li>
-                                <li><a class="menu__item" href="#">контакты</a></li>
-                            </ul>
+                            <input class="input" type="radio" name="tabs" id="button-burger-close">
+                            <div class="menu-burger">
+                                <ul class="menu__box">
+                                    <label class="button-burger-close" for="button-burger-close">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                                        </svg>
+                                    </label>
+                                    <li><a class="menu__item" href="./homepage.html">about us</a></li>
+                                    <li><a class="menu__item" href="./services-page.html">послуги</a></li>
+                                    <li><a class="menu__item" href="#">команда</a></li>
+                                    <li><a class="menu__item" href="./publications.html">публікації</a></li>
+                                    <li><a class="menu__item" href="#">контакты</a></li>
+                                </ul>
+                            </div>
                         </div> 
                         <!-- <object width="32px" height="32px" class="gamburger" data="./svg/Hamburger.svg" type="image/svg+xml"></object> -->
                     </div>
@@ -48,16 +61,16 @@
                             <label class="language__item language uk" for="uk">УК</label>
                             <input class="input" type="radio" name="tab" id="ru">
                             <label class="language__item language ru" for="ru">РУ</label>
-                            <input class="input" type="radio" name="tab" id="en">
+                            <input class="input" type="radio" name="tab" id="en" checked>
                             <label class="language__item language en" for="en">EN</label>
                         </div> 
                         
                             <ul class="header__list">
-                                    <li><a href="" class="header__link-normal blok-none">Kyiv, Mechnikova str, 14/1</a>
+                                    <li><a href="" class="header__link-normal blok-none">&#9679 Kyiv, Mechnikova str, 14/1</a>
                                         </li>
-                                    <li><a href="" style="font-weight: 700;" class="header__link-normal">0800 211 927</a>
+                                    <li><a href="" style="font-weight: 700;" class="header__link-normal"><span class="blok-none-span">&#9679 </span> 0800 211 927</a>
                                         </li>
-                                    <li><a href="" class="header__link blok-none"><object height="24px" data="./svg/facebook-grey.svg" type="image/svg+xml"></object></a>
+                                    <li><a href="" class="header__link blok-none">&#9679 <object style="margin-bottom: -5px;" height="24px" data="./svg/facebook-grey.svg" type="image/svg+xml"></object></a>
                                         </li>
                             </ul>      
                 </div> 
@@ -91,7 +104,7 @@
                     <div class="we-have__text">
                         <h4 class="h-4-blue">Equity associate</h4>
                         <p class="h-5">April 22</p>
-                        <hr style="color: #E6E6F0;">
+                        <hr class="hr-thin">
                         <p class="paragraph-14-black">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                     </div>
                 </div>
@@ -104,7 +117,7 @@
                     <div class="we-have__text">
                     <h4 class="h-4-blue">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
                     <p class="h-5">September 29</p>
-                    <hr style="color: #E6E6F0;">
+                    <hr class="hr-thin">
                     <p class="paragraph-14-black">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                     </div>
         
@@ -118,8 +131,8 @@
                     <div class="we-have__text">
                         <h4 class="h-4-blue">Millennial Testament</h4>
                         <p class="h-5">August 19</p>
-                        <hr style="color: #E6E6F0;">
-                        <p class="paragraph-14-black">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                        <hr class="hr-thin">
+                        <p class="paragraph-14-black">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                     </div>
                 </div>
                 <div class="we-have-wrapper__box margin-top">
@@ -129,10 +142,10 @@
                         <img class="we-have__picture" src="./img/we-have-514__4.png" alt="man">
                     </picture>
                     <div class="we-have__text">
-                        <h4 class="h-4-blue">Millennial Testament</h4>
+                        <h4 class="h-4-blue">Language Law: How to Make Your Website Relevant/h4>
                         <p class="h-5">August 19</p>
-                        <hr style="color: #E6E6F0;">
-                        <p class="paragraph-14-black">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                        <hr class="hr-thin">
+                        <p class="paragraph-14-black">Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful! This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN… </p>
                     </div>
                 </div>
                 <div class="we-have-wrapper__box margin-top">
@@ -142,18 +155,18 @@
                         <img class="we-have__picture" src="./img/we-have-514__5.png" alt="man">
                     </picture>
                     <div class="we-have__text">
-                        <h4 class="h-4-blue">Millennial Testament</h4>
-                        <p class="h-5">August 19</p>
-                        <hr style="color: #E6E6F0;">
-                        <p class="paragraph-14-black">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                        <h4 class="h-4-blue">Reimbursement of the child's tuition fees in kindergarten and school</h4>
+                        <p class="h-5">February 5, 2018</p>
+                        <hr class="hr-thin">
+                        <p class="paragraph-14-black">What we are talking about In June this year, the Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…</p>
                     </div>
                 </div>
                 <div class="we-have-wrapper__box margin-top">
                         <div class="we-have__text">
-                        <h4 class="h-4-blue">Millennial Testament</h4>
-                        <p class="h-5">August 19</p>
-                        <hr style="color: #E6E6F0;">
-                        <p class="paragraph-14-black">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                        <h4 class="h-4-blue">Currency control is dead, long live currency control!</h4>
+                        <p class="h-5">June 14, 2018 </p>
+                        <hr class="hr-thin">
+                        <p class="paragraph-14-black space"> Experts hold conferences, round tables and other events on "liberalization of currency legislation." Lawyers-experts-novelists rub their fingers about "ctrl + c / ctrl + v".</p>
                     </div>
                 </div>
             </div>
@@ -165,39 +178,39 @@
        
 
 </div>
-        <footer class="footer">  
-            <div class="footer-wrapper">
-                <span class="shadow-3"></span>
-                <div class="footer-adress">
-                    <p class="h-4-main">Kyiv, Mechnikova str, 14/1 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
-                    <a class="h-3__caps-12" href="">on map</a>
-                </div>
-                <h4 class="h-4-main-grey footer-adress">© 2021 HLEGAL Law company, LLC</h4>
-            </div> 
-            <div class="footer-adress">
-                <a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
-                    </svg>
-                    </a>
-                <p class="h-4-main"><span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span> 0800 211 927 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
-                <a class="h-4-blue" href="www.contact@forstudy.space">contact@forstudy.space</a>          
-            </div>
-        </footer>
-        <footer class="footer-phone">  
-                <span class="shadow-3-phone"></span>
-                <div class="footer-phone-adress">
-                    <p style="margin: 30px 0 10px 0;" class="h-4-main">Kyiv, Mechnikova str, 14/1</p>
-                    <p><a class="h-3__caps-12" href="">on map</a></p>
-                    <p style="margin: 20px 0 20px 0;"><a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
-                        </svg>
-                    </a></p>
-                    <p class="h-4-main">0800 211 927</p>
-                    <p style="margin: 10px 0 10px 0;"><a class="h-4-blue" href="www.contact@forstudy.space">contact@forstudy.space</a></p> 
-                    <h4 class="h-4-main-grey footer-adress">© 2021 HLEGAL Law company, LLC</h4>    
-                </div>
-    
-        </footer>
+<footer class="footer">  
+    <div class="footer-wrapper">
+        <span class="shadow-3"></span>
+        <div class="footer-adress">
+            <p class="h-4-main">Kyiv, Mechnikova str, 14/1 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
+            <a class="h-3__caps-12" href="">on map</a>
+        </div>
+        <h4 class="h-4-main-grey footer-adress-company">© 2021 HLEGAL Law company, LLC</h4>
+    </div> 
+    <div class="footer-adress">
+        <a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+            </svg>
+            </a>
+        <p class="h-4-main"><span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span> 0800 211 927 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
+        <a class="h-4-blue-withouthover" href="www.contact@forstudy.space">contact@forstudy.space</a>          
+    </div> 
+    <h4 class="h-4-main-grey footer-adress-none">© 2021 HLEGAL Law company, LLC</h4>
+</footer>
+<footer class="footer-phone">  
+        <span class="shadow-3-phone"></span>
+        <div class="footer-phone-adress">
+            <p style="margin: 30px 0 10px 0;" class="h-4-main">Kyiv, Mechnikova str, 14/1</p>
+            <p><a class="h-3__caps-12" href="">on map</a></p>
+            <p style="margin: 20px 0 20px 0;"><a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+                </svg>
+            </a></p>
+            <p class="h-4-main-bold">0800 211 927</p>
+            <p style="margin: 10px 0 10px 0;"><a class="h-4-blue-withouthover" href="www.contact@forstudy.space">contact@forstudy.space</a></p> 
+            <h4 class="h-4-main-grey footer-adress-company-2">© 2021 HLEGAL Law company, LLC</h4>    
+        </div>
+</footer>
 
 
 </body>

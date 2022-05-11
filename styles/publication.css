@@ -93,7 +93,7 @@ font-weight: 700;
 }
 @media (max-width: 1024px) {
 .we-have__entry {
-    margin: 60px 60px 30px 60px;
+    margin: 60px 0 30px 0;
 } 
 }
 @media (max-width: 734px) {
@@ -104,8 +104,15 @@ font-weight: 700;
     min-width: 100vw;
     padding: 0;
 }
+.we-have__entry {
+    margin: 30px;
+} 
+
+.we-have__picture-entry {
+    height: auto;
+}
 
 .link-img__youtube img{
     width: 315px;
 }
-  }
+}

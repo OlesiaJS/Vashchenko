@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/utility.css">
 </head>
 <body>
     <div class="container">
@@ -27,19 +28,31 @@
                             <div><a class="list-header-service" href="">services</a></div>
                         </div>
                         <div class="gamburger">
-                            <input id="menu__toggle" type="checkbox" />
-                            <label class="menu__close" for="menu__toggle">
-                              <span></span>
+                            <input class="input" type="radio" name="tabs" id="burger">
+                            <label class="burger" for="burger">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10H25" stroke="#FFFFFF" stroke-width="2"/>
+                                    <path d="M7 16H25" stroke="#FFFFFF" stroke-width="2"/>
+                                    <path d="M7 22H25" stroke="#FFFFFF" stroke-width="2"/>
+                                </svg> -->
                             </label>
-                            <ul class="menu__box">
-                                <li><a class="menu__item" href="#">about us</a></li>
-                                <li><a class="menu__item" href="#">послуги</a></li>
-                                <li><a class="menu__item" href="#">команда</a></li>
-                                <li><a class="menu__item" href="#">публікації</a></li>
-                                <li><a class="menu__item" href="#">контакты</a></li>
-                            </ul>
+                            <input class="input" type="radio" name="tabs" id="button-burger-close">
+                            <div class="menu-burger">
+                                <ul class="menu__box">
+                                    <label class="button-burger-close" for="button-burger-close">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+                                        </svg>
+                                    </label>
+                                    <li><a class="menu__item" href="./homepage.html">about us</a></li>
+                                    <li><a class="menu__item" href="./services-page.html">послуги</a></li>
+                                    <li><a class="menu__item" href="#">команда</a></li>
+                                    <li><a class="menu__item" href="./publications.html">публікації</a></li>
+                                    <li><a class="menu__item" href="#">контакты</a></li>
+                                </ul>
+                            </div>
                         </div> 
-                        <!-- <object width="32px" height="32px" class="gamburger" data="./svg/Hamburger.svg" type="image/svg+xml"></object> -->
                     </div>
                     <div class="header-logo__contact">       
                         <div class="language">
@@ -47,26 +60,26 @@
                             <label class="language__item language uk" for="uk">УК</label>
                             <input class="input" type="radio" name="tab" id="ru">
                             <label class="language__item language ru" for="ru">РУ</label>
-                            <input class="input" type="radio" name="tab" id="en">
+                            <input class="input" type="radio" name="tab" id="en" checked>
                             <label class="language__item language en" for="en">EN</label>
                         </div> 
                         
                             <ul class="header__list">
-                                    <li><a href="" class="header__link-normal blok-none">Kyiv, Mechnikova str, 14/1</a>
-                                        </li>
-                                    <li><a href="" class="header__link">0800 211 927</a>
-                                        </li>
-                                    <li><a href="" class="header__link blok-none"><object height="24px" data="./svg/facebook.svg" type="image/svg+xml"></object></a>
-                                        </li>
+                                <li><a href="" class="header__link-normal blok-none"><span class="blok-none-span">&#9679</span>Kyiv, Mechnikova str, 14/1</a>
+                                </li>
+                            <li><a href="" class="header__link"><span class="blok-none-span">&#9679</span>0800 211 927</a>
+                                </li>
+                            <li><a href="" class="header__link blok-none"><span class="blok-none-span">&#9679</span><object style="margin-bottom: -5px;" height="24px" data="./svg/facebook.svg" type="image/svg+xml"></object></a>
+                                </li>
                             </ul>      
                 </div> 
                 </section>
                     <nav class="header__menu">
                         <ul class="header__list-none">
-                            <li><a href="" class="header__link">about us</a></li>
+                            <li><a href="./homepage.html" class="header__link">about us</a></li>
                             <li><a href="" class="header__link-active">services</a></li>
                             <li><a href="" class="header__link">team</a></li>
-                            <li><a href="" class="header__link">publication</a></li>
+                            <li><a href="./publications.html" class="header__link">publication</a></li>
                             <li><a href="" class="header__link">contact</a></li>
                         </ul>
                     </nav>
@@ -134,39 +147,39 @@
 </section>
 
 </div>
-        <footer class="footer">  
-            <div class="footer-wrapper">
-                <span class="shadow-3"></span>
-                <div class="footer-adress">
-                    <p class="h-4-main">Kyiv, Mechnikova str, 14/1 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
-                    <a class="h-3__caps-12" href="">on map</a>
-                </div>
-                <h4 class="h-4-main-grey footer-adress">© 2021 HLEGAL Law company, LLC</h4>
-            </div> 
-            <div class="footer-adress">
-                <a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
-                    </svg>
-                    </a>
-                <p class="h-4-main"><span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span> 0800 211 927 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
-                <a class="h-4-blue" href="www.contact@forstudy.space">contact@forstudy.space</a>          
-            </div>
-        </footer>
-        <footer class="footer-phone">  
-                <span class="shadow-3-phone"></span>
-                <div class="footer-phone-adress">
-                    <p style="margin: 30px 0 10px 0;" class="h-4-main">Kyiv, Mechnikova str, 14/1</p>
-                    <p><a class="h-3__caps-12" href="">on map</a></p>
-                    <p style="margin: 20px 0 20px 0;"><a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
-                        </svg>
-                    </a></p>
-                    <p class="h-4-main">0800 211 927</p>
-                    <p style="margin: 10px 0 10px 0;"><a class="h-4-blue" href="www.contact@forstudy.space">contact@forstudy.space</a></p> 
-                    <h4 class="h-4-main-grey footer-adress">© 2021 HLEGAL Law company, LLC</h4>    
-                </div>
-    
-        </footer>
+<footer class="footer">  
+    <div class="footer-wrapper">
+        <span class="shadow-3"></span>
+        <div class="footer-adress">
+            <p class="h-4-main">Kyiv, Mechnikova str, 14/1 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
+            <a class="h-3__caps-12" href="">on map</a>
+        </div>
+        <h4 class="h-4-main-grey footer-adress-company">© 2021 HLEGAL Law company, LLC</h4>
+    </div> 
+    <div class="footer-adress">
+        <a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+            </svg>
+            </a>
+        <p class="h-4-main"><span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span> 0800 211 927 <span style="color: #B3B3BA; margin: auto 10px;"> &#9679 </span></p>
+        <a class="h-4-blue-withouthover" href="www.contact@forstudy.space">contact@forstudy.space</a>          
+    </div> 
+    <h4 class="h-4-main-grey footer-adress-none">© 2021 HLEGAL Law company, LLC</h4>
+</footer>
+<footer class="footer-phone">  
+        <span class="shadow-3-phone"></span>
+        <div class="footer-phone-adress">
+            <p style="margin: 30px 0 10px 0;" class="h-4-main">Kyiv, Mechnikova str, 14/1</p>
+            <p><a class="h-3__caps-12" href="">on map</a></p>
+            <p style="margin: 20px 0 20px 0;"><a href="www.facebook.com"><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
+                </svg>
+            </a></p>
+            <p class="h-4-main-bold">0800 211 927</p>
+            <p style="margin: 10px 0 10px 0;"><a class="h-4-blue-withouthover" href="www.contact@forstudy.space">contact@forstudy.space</a></p> 
+            <h4 class="h-4-main-grey footer-adress-company-2">© 2021 HLEGAL Law company, LLC</h4>    
+        </div>
+</footer>
 
 
 </body>
